@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Todos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        #userInfo {
+            margin-bottom: 20px;
+            color: #555;
+        }
+        #todos {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+        #todo {
+            width: calc(100% - 80px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #save, #logout {
+            margin-right: 10px;
+        }
+        delete-button {
+            background-color: #7e91a5;
+            border-radius: 4px;
+            font-size: 8px;
+            padding: 4px 4px;
+            textContent = 'X';
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <p id="userInfo">User Name: <span id="username"></span> , <br> Email: <span id="email"></span></p>
+        <h2>Todos:</h2>
+        <div id="todos"></div>
+        <form id="todoForm">
+            <input type="text" id="todo" required>
+            <button type="submit">Add</button>
+        </form>
+        <button id="save">Save</button>
+        <button id="logout">Logout</button>
+    </div>
+    <script src="todos.js"></script>
+</body>
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Todos</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <p id="userInfo">User Name: <span id="username"></span>, Email: <span id="email"></span></p>
+    <h2>Todos:</h2>
+    <div id="todos"></div>
+    <form id="todoForm">
+        <label for="todo">Add Todo:</label>
+        <input type="text" id="todo" required>
+        <button type="submit">Add</button>
+    </form>
+    <button id="save">Save</button>
+    <button id="logout">Logout</button>
+    <script src="todos.js"></script>
+</body>
+</html> -->
